@@ -73,7 +73,6 @@
 			</fieldset>
 			<fieldset	
 				name="secondary" label="SECONDARY_SETTINGS">
-				<field name="modoptions" type="spacer" default="MOD_T2T_FORMS_FIELD_MODEOPTIONS" label="MOD_T2T_FORMS_FIELD_MODEOPTIONS" description="MOD_T2T_FORMS_FIELD_MODEOPTIONS" />
 				<field
 					name="train"
 					type="checkbox"
@@ -123,7 +122,6 @@
 					size="10"
 					label="MOD_T2T_FORMS_FIELD_CSSJQRY_LABEL"
 					description="MOD_T2T_FORMS_FIELD_CSSJQRY_DESC" />
-				<field name="viewoptions" type="spacer" default="MOD_T2T_FORMS_FIELD_VIEWOPTIONS" label="MOD_T2T_FORMS_FIELD_VIEWOPTIONS" description="MOD_T2T_FORMS_FIELD_VIEWOPTIONS" />
 			</fieldset>
 		</fields>
 	</config>
