@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	  type="module"
+	  version="3.0"
+	  client="site"
+	  method="upgrade">
+	<name>T2TForms</name> 
+	<author>ArgestGroup</author> 
+	<creationDate>2013-02-26</creationDate> 
+	<copyright>All rights reserved by www.argest.com.ua</copyright> 
+	<license>This extension in released under the GNU/GPL License - http://argest.com.ua/copyright</license> 
+	<authorEmail>info@argest.com.ua</authorEmail> 
+	<authorUrl>http://www.argest.com.ua</authorUrl> 
+	<version>3.0.2</version> 
+	<description>MOD_T2T_FORMS_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_t2t_forms">mod_t2t_forms.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="BASIC_SETTINGS">
+				<field
+					name="secret"
+					type="text"
+					default=""
+					size="10"
+					label="MOD_T2T_FORMS_FIELD_SECRET_LABEL"
+					description="MOD_T2T_FORMS_FIELD_SECRET_DESC" />
+				<field
+					name="domain"
+					type="text"
+					default=""
+					size="10"
+					label="MOD_T2T_FORMS_FIELD_DOMAIN_LABEL"
+					description="MOD_T2T_FORMS_FIELD_DOMAIN_DESC" />
+				<field
+					name="forms"
+					type="checkbox"
+					default="0"
+					value="1"
+					label="MOD_T2T_FORMS_FIELD_FORMS_LABEL"
+					description="MOD_T2T_FORMS_FIELD_FORMS_DESC" />
+				<field
+					name="results"
+					type="checkbox"
+					default="0"
+					value="1"
+					label="MOD_T2T_FORMS_FIELD_RESULTS_LABEL"
+					description="MOD_T2T_FORMS_FIELD_RESULTS_DESC" />
+				<field
+					name="archive"
+					type="checkbox"
+					default="0"
+					value="1"
+					label="MOD_T2T_FORMS_FIELD_ARCHIVE_LABEL"
+					description="MOD_T2T_FORMS_FIELD_ARCHIVE_DESC" />
+				<field 
+					name="language" 
+					type="list" 
+					default="ua" 
+					label="MOD_T2T_FORMS_FIELD_LANGUAGE_LABEL" 
+					description="MOD_T2T_FORMS_FIELD_LANGUAGE_DESC">
+				  <option value="ua">Українська</option>
+				  <option value="ru">Russian</option>
+				  <option value="en">English</option>
+				</field>
+			</fieldset>
+			<fieldset	
+				name="SECONDARY_SETTINGS">
+				<field name="modoptions" type="spacer" default="MOD_T2T_FORMS_FIELD_MODEOPTIONS" label="MOD_T2T_FORMS_FIELD_MODEOPTIONS" description="MOD_T2T_FORMS_FIELD_MODEOPTIONS" />
+				<field
+					name="train"
+					type="checkbox"
+					default="1"
+					value="1"
+					label="MOD_T2T_FORMS_FIELD_TRAIN_LABEL"
+					description="MOD_T2T_FORMS_FIELD_TRAIN_DESC" />
+				<field
+					name="bus"
+					type="checkbox"
+					default="1"
+					value="1"
+					label="MOD_T2T_FORMS_FIELD_BUS_LABEL"
+					description="MOD_T2T_FORMS_FIELD_BUS_DESC" />
+				<field
+					name="usejqry"
+					type="checkbox"
+					default="1"
+					value="1"
+					label="MOD_T2T_FORMS_FIELD_USEJQRY_LABEL"
+					description="MOD_T2T_FORMS_FIELD_USEJQRY_DESC" />
+				<field
+					name="resultsform"
+					type="checkbox"
+					default="1"
+					value="1"
+					label="MOD_T2T_FORMS_FIELD_RESULTSFORM_LABEL"
+					description="MOD_T2T_FORMS_FIELD_RESULTSFORM_DESC" />
+				<field
+					name="paysystems"
+					type="checkbox"
+					default="1"
+					value="1"
+					label="MOD_T2T_FORMS_FIELD_PAYSYSTEMS_LABEL"
+					description="MOD_T2T_FORMS_FIELD_PAYSYSTEMS_DESC" />
+				<field
+					name="css"
+					type="text"
+					default="http://v2gui.t2t.in.ua/themes/forms/css/t2t.css"
+					size="10"
+					label="MOD_T2T_FORMS_FIELD_CSS_LABEL"
+					description="MOD_T2T_FORMS_FIELD_CSS_DESC" />
+				<field
+					name="cssjqry"
+					type="text"
+					default="http://v2gui.t2t.in.ua/themes/forms/css/jquery-ui.css"
+					size="10"
+					label="MOD_T2T_FORMS_FIELD_CSSJQRY_LABEL"
+					description="MOD_T2T_FORMS_FIELD_CSSJQRY_DESC" />
+				<field name="viewoptions" type="spacer" default="MOD_T2T_FORMS_FIELD_VIEWOPTIONS" label="MOD_T2T_FORMS_FIELD_VIEWOPTIONS" description="MOD_T2T_FORMS_FIELD_VIEWOPTIONS" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
