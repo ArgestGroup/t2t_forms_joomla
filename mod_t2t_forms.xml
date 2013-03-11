@@ -40,6 +40,13 @@
 					label="MOD_T2T_FORMS_FIELD_DOMAIN_LABEL"
 					description="MOD_T2T_FORMS_FIELD_DOMAIN_DESC" />
 				<field
+					name="result_url"
+					type="text"
+					default="/"
+					size="10"
+					label="MOD_T2T_FORMS_FIELD_RESULTURL_LABEL"
+					description="MOD_T2T_FORMS_FIELD_RESULTURL_DESC" />					
+				<field
 					name="forms"
 					type="checkbox"
 					default="0"
@@ -76,35 +83,35 @@
 				<field
 					name="train"
 					type="checkbox"
-					default="1"
+					default="0"
 					value="1"
 					label="MOD_T2T_FORMS_FIELD_TRAIN_LABEL"
 					description="MOD_T2T_FORMS_FIELD_TRAIN_DESC" />
 				<field
 					name="bus"
 					type="checkbox"
-					default="1"
+					default="0"
 					value="1"
 					label="MOD_T2T_FORMS_FIELD_BUS_LABEL"
 					description="MOD_T2T_FORMS_FIELD_BUS_DESC" />
 				<field
 					name="usejqry"
 					type="checkbox"
-					default="1"
+					default="0"
 					value="1"
 					label="MOD_T2T_FORMS_FIELD_USEJQRY_LABEL"
 					description="MOD_T2T_FORMS_FIELD_USEJQRY_DESC" />
 				<field
 					name="resultsform"
 					type="checkbox"
-					default="1"
+					default="0"
 					value="1"
 					label="MOD_T2T_FORMS_FIELD_RESULTSFORM_LABEL"
 					description="MOD_T2T_FORMS_FIELD_RESULTSFORM_DESC" />
 				<field
 					name="paysystems"
 					type="checkbox"
-					default="1"
+					default="0"
 					value="1"
 					label="MOD_T2T_FORMS_FIELD_PAYSYSTEMS_LABEL"
 					description="MOD_T2T_FORMS_FIELD_PAYSYSTEMS_DESC" />

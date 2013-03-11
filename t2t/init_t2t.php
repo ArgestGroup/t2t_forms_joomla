@@ -4,10 +4,10 @@
 	include_once('T2TForms.php');
 	
 	// Задаем страницу результатов
-	//T2TForms::app()->setResultPage('/');
+	T2TForms::app()->setResultPage($params->get('result_url'));
 	
 	// Задаем путь к роутеру
-    T2TForms::app()->setRouter(JURI::base(). 'modules/mod_' . $module->name . '/t2t/T2TRouter.php');
+        T2TForms::app()->setRouter(JURI::base(). 'modules/mod_' . $module->name . '/t2t/T2TRouter.php');
     
 	// Задаем язык интерфейса
 	T2TForms::app()->setLang($params->get('language'));
