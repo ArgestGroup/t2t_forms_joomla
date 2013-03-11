@@ -1,7 +1,7 @@
 <?php
 	defined('_JEXEC') or die();
 	// Инициализация компоненты
-	include_once('T2TForms.php');
+	include_once $_SERVER['DOCUMENT_ROOT'].'/modules/mod_t2t_forms/t2t/T2TForms.php';
 	
 	// Задаем страницу результатов
 	T2TForms::app()->setResultPage($params->get('result_url'));
