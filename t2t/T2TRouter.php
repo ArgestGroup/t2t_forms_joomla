@@ -1,7 +1,7 @@
 <?php
 
 	// Инициализация компонента
-	include_once $_SERVER['DOCUMENT_ROOT'].'/modules/mod_t2t_forms/t2t/T2TForms.php';
+	require_once dirname(__FILE__).'/T2TForms.php';
 	// Обработка логаут из режима авторизации форм
 	T2TForms::logout();
 	// Обработка ajax запросов
