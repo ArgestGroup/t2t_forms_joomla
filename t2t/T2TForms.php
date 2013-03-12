@@ -1,19 +1,16 @@
 <?php
 
 	/**
-	 * @version 0.92
-	 * @author Sergey Shuruta
-	 * @copyright 2013 Argest Group 
+	 * @version 0.933
+	 	 * @author Sergey Shuruta
+	 * @copyright Copyright 2013 Argest Group LLC (email: info@argest.com.ua)
 	 */
 	class T2TForms
 	{
 
 		const SERVER = 'http://v2gui.t2t.in.ua'; // Сервер форм заказа
-		//const SERVER = 'http://forms.local';
 		const INVOICE_SERVER = 'http://v2invoice.t2t.in.ua'; // Сервер оплаты
-		//const INVOICE_SERVER = 'http://invoice.t2t.in.local';
 		const T2T_FORMS_STYLE = 'http://v2gui.t2t.in.ua/themes/forms/css/t2t.css'; // стили Css
-		//const T2T_FORMS_STYLE = 'http://forms.local/themes/forms/css/t2t.css';
 		const T2T_JQUERY_UI_STYLE = 'http://v2gui.t2t.in.ua/themes/forms/css/jquery-ui.css'; // стили Css
 		const PS_DEFAULT = 'ec_privat'; // Платежная система по умолчанию
 		const TRAIN = 'train'; // Поезда
@@ -384,7 +381,7 @@
 		{
 				
 			$email = self::getUEmail();
-			$lang = self::getLang();
+			$lang = $this->getlang();
 			$date_a = isset($_GET['date_a']) ? $_GET['date_a'] : date("d.m.Y");
 			$date_b = isset($_GET['date_b']) ? $_GET['date_b'] : date("d.m.Y");
 		
@@ -635,10 +632,10 @@
 			  imagedestroy($im);
 		}
 		
-		static public function logout()
+		static public function logout($logaut = false)
 		{
 			if(!isset($_SESSION)) session_start();
-			if(isset($_GET['t2t_logout'])) {
+			if(isset($_GET['t2t_logout']) || $logaut) {
 				$_SESSION['t2t'] = array();
 				header('Location: ' . $_SERVER['HTTP_REFERER']);
 			}
